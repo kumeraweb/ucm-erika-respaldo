@@ -31,6 +31,17 @@ const { title = SITE.name } = Astro.props
       gtag('config', 'AW-17790061115')
     </script>
 
+    <!-- Google tag (gtag.js) - Secondary Pixel -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17791440821"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', 'AW-17791440821')
+    </script>
+
     <!-- Top Disclaimer -->
     <meta
       name="description"
