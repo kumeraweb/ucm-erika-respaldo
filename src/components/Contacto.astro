@@ -1,0 +1,56 @@
+---
+import { SITE } from '../data/site'
+---
+
+<section id="contacto" class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">¿Necesitas más información?</h2>
+
+    <p class="text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+      Estoy aquí para ayudarte a elegir el plan de asistencia privada que mejor se adapte a tus
+      necesidades. Escríbeme y con gusto te orientaré.
+    </p>
+
+    <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+      <!-- WhatsApp -->
+      <a
+        href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(SITE.whatsappMessage)}`}
+        class="flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl shadow-md transition font-semibold"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path
+            d="M3 21l1.6-5.5A8.5 8.5 0 1111 20.4L5.5 22 3 21z"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        WhatsApp
+      </a>
+
+      <!-- Llamada -->
+      <a
+        href={`tel:${SITE.phone}`}
+        class="flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl shadow-md transition font-semibold"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013 4.18 2 2 0 015 2h3a2 2 0 012 1.72c.12.81.3 1.6.54 2.36a2 2 0 01-.45 2L8.09 9.91a16 16 0 006 6l1.83-1.12a2 2 0 012-.11c.76.24 1.55.42 2.36.54A2 2 0 0122 16.92z"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        Llamar
+      </a>
+
+      <!-- Email -->
+      <a
+        href={`mailto:${SITE.email}`}
+        class="flex items-center gap-3 bg-gray-100 hover:bg-gray-200 text-gray-800 px-8 py-3 rounded-xl shadow-md transition font-semibold"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M4 4h16v16H4z"></path>
+          <path d="M4 4l8 8 8-8" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        Email
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,131 @@
+---
+import { SITE } from '../data/site'
+---
+
+<section id="planes" class="py-20 bg-white border-b border-gray-200">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+      Planes de Asistencia Privada
+    </h2>
+
+    <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">
+      Diseñados para brindarte apoyo, seguridad y tranquilidad. Elige el plan que mejor se adapte a
+      tu familia.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Plan Essencial -->
+      <div
+        class="rounded-2xl shadow-md border border-gray-200 p-8 text-center hover:shadow-lg transition"
+      >
+        <div class="flex justify-center mb-4">
+          <svg
+            class="w-12 h-12 text-blue-600"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle cx="12" cy="12" r="9"></circle>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">Opciones de Planes para tu Hogar</h3>
+        <p class="text-gray-600 mb-6">
+          Existen alternativas diseñadas para diferentes tipos de familias y niveles de
+          acompañamiento. La ejecutiva te ayudará a identificar cuál se ajusta mejor a tus
+          necesidades.
+        </p>
+
+        <ul class="text-gray-700 text-sm space-y-2 mb-6">
+          <li>• Alternativas flexibles</li>
+          <li>• Orientación personalizada</li>
+          <li>• Opciones para distintos presupuestos</li>
+        </ul>
+
+        <a
+          href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent('Quiero conocer las opciones de planes disponibles')}`}
+          class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition"
+        >
+          Consultar
+        </a>
+      </div>
+
+      <!-- Plan Plus -->
+      <div
+        class="rounded-2xl shadow-md border border-gray-200 p-8 text-center hover:shadow-lg transition bg-gray-50"
+      >
+        <div class="flex justify-center mb-4">
+          <svg
+            class="w-12 h-12 text-blue-600"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            viewBox="0 0 24 24"
+          >
+            <path d="M4 12h16M12 4v16" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">Planes Adaptados a tu Familia</h3>
+        <p class="text-gray-600 mb-6">
+          Cada familia es distinta. Aquí podrás recibir una guía clara sobre las opciones que
+          existen y cuál podría ofrecerte mayor comodidad y tranquilidad.
+        </p>
+
+        <ul class="text-gray-700 text-sm space-y-2 mb-6">
+          <li>• Asesoría directa</li>
+          <li>• Elección según tus necesidades</li>
+          <li>• Información detallada al conversar</li>
+        </ul>
+
+        <a
+          href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent('Quiero asesoría sobre los planes para mi familia')}`}
+          class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition"
+        >
+          Consultar
+        </a>
+      </div>
+
+      <!-- Plan Premium -->
+      <div
+        class="rounded-2xl shadow-md border border-gray-200 p-8 text-center hover:shadow-lg transition"
+      >
+        <div class="flex justify-center mb-4">
+          <svg
+            class="w-12 h-12 text-blue-600"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-semibold text-gray-900 mb-3">Asesoría Integral en Planes</h3>
+        <p class="text-gray-600 mb-6">
+          Si buscas tranquilidad total, puedes recibir una explicación completa sobre las
+          alternativas más completas y cómo podrían ayudarte en tu día a día.
+        </p>
+
+        <ul class="text-gray-700 text-sm space-y-2 mb-6">
+          <li>• Información completa</li>
+          <li>• Acompañamiento en la elección</li>
+          <li>• Orientación para tu tranquilidad</li>
+        </ul>
+
+        <a
+          href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent('Quiero información completa sobre las alternativas de planes')}`}
+          class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition"
+        >
+          Consultar
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

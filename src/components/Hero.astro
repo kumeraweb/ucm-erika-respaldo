@@ -2,21 +2,37 @@
 import { SITE } from '../data/site'
 ---
 
-<section class="w-full py-20 bg-gray-100 border-b border-gray-300">
-  <div class="max-w-5xl mx-auto px-6 text-center">
-    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sitio en Construcción</h1>
+<section
+  class="relative w-full py-24 border-b border-gray-300 overflow-hidden"
+  style="background-image: url('/herobg.png'); background-size: cover; background-position: center;"
+>
+  <!-- Blur overlay -->
+  <div class="absolute inset-0 backdrop-blur-sm bg-black/40"></div>
 
-    <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-      Estamos preparando una nueva plataforma para ofrecerte información clara y rápida sobre
-      <strong>planes de asistencia privada</strong>. Muy pronto estará disponible.
+  <div class="relative max-w-5xl mx-auto px-6 text-center text-white py-10">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+      Planes de Asistencia Privada para tu Tranquilidad
+    </h1>
+
+    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed text-gray-200">
+      Accede a atención personalizada, apoyo en situaciones de emergencia y acompañamiento cuando
+      más lo necesites. Un servicio confiable para familias que buscan seguridad y respuestas
+      rápidas.
     </p>
 
-    <div class="mt-8">
+    <div class="flex flex-col md:flex-row items-center justify-center gap-4 mt-4">
       <a
         href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(SITE.whatsappMessage)}`}
-        class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg shadow-md transition font-medium"
+        class="bg-green-600 hover:bg-green-700 px-8 py-3 rounded-lg shadow-md transition font-semibold text-white"
       >
-        Contáctanos por WhatsApp
+        Contratar por WhatsApp
+      </a>
+
+      <a
+        href="#planes"
+        class="bg-white/90 hover:bg-white text-gray-900 px-8 py-3 rounded-lg shadow-md transition font-semibold"
+      >
+        Ver Planes Disponibles
       </a>
     </div>
   </div>
