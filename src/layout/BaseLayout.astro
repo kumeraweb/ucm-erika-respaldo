@@ -1,0 +1,57 @@
+---
+import { SITE } from '../data/site'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import '../styles/global.css'
+
+const { title = SITE.name } = Astro.props
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="/styles/global.css" />
+
+    <!-- Google Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17790061115"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', 'AW-17790061115')
+    </script>
+
+    <!-- Top Disclaimer -->
+    <meta
+      name="description"
+      content="Asesoría independiente en planes de asistencia privada. No es un sitio oficial de servicios médicos."
+    />
+  </head>
+
+  <body class="min-h-screen flex flex-col bg-gray-50 text-gray-900">
+    <!-- Site-wide Disclaimer -->
+    <div
+      class="w-full bg-yellow-50 text-yellow-800 text-sm py-2 px-4 text-center border-b border-yellow-200"
+    >
+      {SITE.disclaimers.top}
+    </div>
+
+    <Header />
+
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>
