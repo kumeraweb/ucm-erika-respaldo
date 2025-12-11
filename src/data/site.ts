@@ -2,7 +2,7 @@
 
 export const SITE = {
   // --- Identidad general ---
-  name: 'Planes de Asistencia Privada',
+  name: 'Planes de Rescate y Asistencia',
   domain: 'https://planesdeasistenciaprivada.cl',
 
   // --- Información de contacto ---
@@ -18,34 +18,34 @@ export const SITE = {
 
   // --- Contenido del sitio ---
   hero: {
-    title: 'Asistencia Privada para tu Familia',
+    title: 'Rescate Médico y Asistencia Privada 24/7',
     subtitle:
-      'Orientación rápida y clara para contratar planes de apoyo domiciliario y acompañamiento para adultos mayores.'
+      'Orientación clara para contratar servicios de ambulancia privada, atención domiciliaria y apoyo urgente para tu familia.'
   },
 
   sections: {
     services: {
-      title: 'Servicios Disponibles',
+      title: 'Servicios de Asistencia y Rescate',
       description:
-        'Asesoría independiente para ayudarte a elegir un plan de asistencia privada que se adapte a tus necesidades.'
+        'Información y orientación sobre servicios de ambulancia particular, atención domiciliaria y apoyo prehospitalario.'
     },
     plans: {
-      title: 'Planes y Beneficios',
+      title: 'Opciones de Planes',
       description:
-        'Revisa las opciones disponibles y recibe orientación personalizada antes de contratar.'
+        'Conoce alternativas de asistencia privada y apoyo en emergencias. Recibe orientación antes de contratar.'
     },
     contact: {
       title: 'Contacto',
       description:
-        'Haz tus consultas por WhatsApp o teléfono. Respuesta rápida dentro del horario hábil.'
+        'Contáctanos por WhatsApp o teléfono para recibir orientación inmediata sobre asistencia privada y servicios de rescate.'
     }
   },
 
   // --- Disclaimers (OBLIGATORIOS segun Hoja UCM) ---
   disclaimers: {
-    top: 'Sitio administrado por asesora independiente. No es sitio oficial, ni representa a ninguna institución de salud.',
+    top: 'Sitio informativo independiente sobre asistencia privada. No representa servicios médicos oficiales ni actúa en nombre de ninguna marca.',
     footer:
-      'Este sitio ofrece asesoría independiente sobre planes de asistencia privada. No es una plataforma oficial de servicios médicos ni reemplaza atención profesional.'
+      'Este sitio entrega orientación independiente sobre servicios de asistencia privada y opciones de rescate. No reemplaza asesoría médica profesional ni pertenece a proveedores oficiales.'
   },
 
   // --- Redes sociales (opcional, generalmente vacío) ---

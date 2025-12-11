@@ -3,36 +3,26 @@ import { SITE } from '../data/site'
 ---
 
 <section
-  class="relative w-full py-24 border-b border-gray-300 overflow-hidden"
-  style="background-image: url('/herobg.png'); background-size: cover; background-position: center;"
+  class="relative w-full py-24 overflow-hidden"
+  style="background-image: url('/ambulance.webp'); background-size: cover; background-position: center;"
 >
-  <!-- Blur overlay -->
-  <div class="absolute inset-0 backdrop-blur-sm bg-black/40"></div>
-
-  <div class="relative max-w-5xl mx-auto px-6 text-center text-white py-10">
-    <h1 class="text-4xl md:text-5xl font-bold mb-6">
-      Planes de Asistencia Privada para tu Tranquilidad
-    </h1>
-
-    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed text-gray-200">
-      Accede a atención personalizada, apoyo en situaciones de emergencia y acompañamiento cuando
-      más lo necesites. Un servicio confiable para familias que buscan seguridad y respuestas
-      rápidas.
+  <div class="absolute inset-0 bg-black/30"></div>
+  <div class="relative max-w-4xl mx-auto px-6 text-center text-white">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">Planes de Rescate Médico</h1>
+    <h2 class="text-xl md:text-2xl font-semibold mb-4">
+      Atención en emergencias, urgencias y asistencia prehospitalaria
+    </h2>
+    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+      Servicio de apoyo rápido y confiable para personas y familias que buscan respaldo inmediato
+      ante imprevistos de salud y situaciones críticas.
     </p>
-
-    <div class="flex flex-col md:flex-row items-center justify-center gap-4 mt-4">
+    <h1 class="text-3xl md:text-4xl font-bold mt-10">Tu tranquilidad, nuestra misión</h1>
+    <div class="mt-8 flex justify-center">
       <a
-        href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(SITE.whatsappMessage)}`}
-        class="bg-green-600 hover:bg-green-700 px-8 py-3 rounded-lg shadow-md transition font-semibold text-white"
+        href={`tel:${SITE.phone}`}
+        class="bg-white text-black font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition"
       >
-        Contratar por WhatsApp
-      </a>
-
-      <a
-        href="#planes"
-        class="bg-white/90 hover:bg-white text-gray-900 px-8 py-3 rounded-lg shadow-md transition font-semibold"
-      >
-        Ver Planes Disponibles
+        Llamar Ahora
       </a>
     </div>
   </div>

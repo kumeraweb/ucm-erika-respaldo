@@ -3,6 +3,7 @@ import { SITE } from '../data/site'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import '../styles/global.css'
+import FloatingWhatsApp from '../components/FloatingWhatsApp.astro'
 
 const { title = SITE.name } = Astro.props
 ---
@@ -20,44 +21,33 @@ const { title = SITE.name } = Astro.props
     <!-- Global Styles -->
     <link rel="stylesheet" href="/styles/global.css" />
 
-    <!-- Google Tag -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17790061115"></script>
+    <!-- Google Tag (placeholder – add real ID only when safe) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXX"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || []
       function gtag() {
         dataLayer.push(arguments)
       }
       gtag('js', new Date())
-      gtag('config', 'AW-17790061115')
-    </script>
-
-    <!-- Google tag (gtag.js) - Secondary Pixel -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17791440821"></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-      gtag('config', 'AW-17791440821')
     </script>
 
     <!-- Top Disclaimer -->
     <meta
       name="description"
-      content="Asesoría independiente en planes de asistencia privada. No es un sitio oficial de servicios médicos."
+      content="Información independiente sobre asistencia privada y orientación para contratar servicios de apoyo prehospitalario."
     />
   </head>
 
   <body class="min-h-screen flex flex-col bg-gray-50 text-gray-900">
     <!-- Site-wide Disclaimer -->
     <div
-      class="w-full bg-yellow-50 text-yellow-800 text-sm py-2 px-4 text-center border-b border-yellow-200"
+      class="w-full bg-gray-100 text-gray-700 text-sm py-2 px-4 text-center border-b border-gray-200"
     >
       {SITE.disclaimers.top}
     </div>
 
     <Header />
+    <FloatingWhatsApp />
 
     <main class="flex-1">
       <slot />

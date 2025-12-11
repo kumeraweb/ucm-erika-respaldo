@@ -4,128 +4,127 @@ import { SITE } from '../data/site'
 
 <section id="planes" class="py-20 bg-white border-b border-gray-200">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-      Planes de Asistencia Privada
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-6">
+      Planes de asistencia para tu familia
     </h2>
 
-    <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">
-      Diseñados para brindarte apoyo, seguridad y tranquilidad. Elige el plan que mejor se adapte a
-      tu familia.
+    <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+      Existen alternativas de asistencia privada que combinan rescate en ambulancia y apoyo médico
+      para distintos momentos de tu vida. La ejecutiva te orientará sobre cuál se adapta mejor a tu
+      realidad.
     </p>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Plan Essencial -->
-      <div
-        class="rounded-2xl shadow-md border border-gray-200 p-8 text-center hover:shadow-lg transition"
-      >
-        <div class="flex justify-center mb-4">
-          <svg
-            class="w-12 h-12 text-blue-600"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.8"
-            viewBox="0 0 24 24"
+    <div class="space-y-10">
+      {/* PLAN FAMILIAR / PRINCIPAL */}
+      <div class="bg-blue-600 text-white rounded-3xl shadow-xl overflow-hidden">
+        <div class="md:flex md:items-stretch">
+          {/* Columna izquierda: nombre y precio de referencia */}
+          <div class="md:w-1/2 px-8 md:px-12 py-10 md:py-14 flex flex-col justify-center">
+            <h3 class="text-3xl md:text-4xl font-extrabold tracking-wide mb-4">Plan Familiar</h3>
+
+            <div class="flex items-baseline gap-3 mb-4">
+              <span class="text-sm uppercase tracking-[0.18em]">Desde</span>
+              <span class="text-4xl md:text-5xl font-extrabold">UF 0,59</span>
+              <span class="text-base md:text-lg font-medium opacity-90">/ mensual</span>
+            </div>
+
+            <p class="text-base md:text-lg opacity-95">
+              Pensado para familias que quieren contar con ambulancia ante situaciones de riesgo
+              vital y urgencias médicas, además de apoyo de salud programado.
+            </p>
+          </div>
+
+          {/* Columna derecha: beneficios */}
+          <div
+            class="md:w-1/2 bg-blue-500/90 px-8 md:px-12 py-10 md:py-14 flex flex-col justify-center"
           >
-            <path d="M12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"></path>
-            <circle cx="12" cy="12" r="9"></circle>
-          </svg>
+            <h4 class="text-lg font-semibold mb-6">
+              ¿Qué tipo de beneficios incluye este tipo de plan?
+            </h4>
+
+            <ul class="divide-y divide-blue-300/60 text-sm md:text-base">
+              <li class="py-2.5">Rescate en ambulancia frente a emergencias y riesgo vital</li>
+              <li class="py-2.5">
+                Atenciones de salud programadas según la alternativa contratada
+              </li>
+              <li class="py-2.5">Servicios anuales adicionales para complementar la protección</li>
+              <li class="py-2.5">
+                Cobertura en zonas definidas, informadas por la ejecutiva al momento de cotizar
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <h3 class="text-xl font-semibold text-gray-900 mb-3">Opciones de Planes para tu Hogar</h3>
-        <p class="text-gray-600 mb-6">
-          Existen alternativas diseñadas para diferentes tipos de familias y niveles de
-          acompañamiento. La ejecutiva te ayudará a identificar cuál se ajusta mejor a tus
-          necesidades.
-        </p>
-
-        <ul class="text-gray-700 text-sm space-y-2 mb-6">
-          <li>• Alternativas flexibles</li>
-          <li>• Orientación personalizada</li>
-          <li>• Opciones para distintos presupuestos</li>
-        </ul>
-
-        <a
-          href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent('Quiero conocer las opciones de planes disponibles')}`}
-          class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition"
-        >
-          Consultar
-        </a>
+        {/* CTA inferior centrado */}
+        <div class="border-t border-blue-400/60 px-8 md:px-12 py-6 flex justify-center">
+          <a
+            href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(
+              'Quiero cotizar el plan familiar de asistencia privada'
+            )}`}
+            class="inline-flex items-center justify-center px-7 py-3 rounded-full bg-white text-blue-700 font-semibold text-sm md:text-base hover:bg-blue-50 transition"
+          >
+            Cotizar Plan Familiar por WhatsApp
+          </a>
+        </div>
       </div>
 
-      <!-- Plan Plus -->
-      <div
-        class="rounded-2xl shadow-md border border-gray-200 p-8 text-center hover:shadow-lg transition bg-gray-50"
-      >
-        <div class="flex justify-center mb-4">
-          <svg
-            class="w-12 h-12 text-blue-600"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.8"
-            viewBox="0 0 24 24"
+      {/* PLAN SENIOR */}
+      <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+        <div class="md:flex md:items-stretch">
+          {/* Columna izquierda: nombre y precio de referencia */}
+          <div class="md:w-1/2 px-8 md:px-12 py-10 md:py-14 flex flex-col justify-center">
+            <h3 class="text-3xl md:text-4xl font-extrabold tracking-wide text-gray-900 mb-4">
+              Plan Senior
+            </h3>
+
+            <div class="flex items-baseline gap-3 mb-4">
+              <span class="text-sm uppercase tracking-[0.18em] text-gray-500">Desde</span>
+              <span class="text-4xl md:text-5xl font-extrabold text-gray-900">UF 1</span>
+              <span class="text-base md:text-lg font-medium text-gray-700">/ mensual</span>
+            </div>
+
+            <p class="text-base md:text-lg text-gray-700">
+              Dirigido a personas mayores que necesitan apoyo más frecuente, combinando rescate en
+              ambulancia con asistencia de salud y atenciones con copago preferente.
+            </p>
+          </div>
+
+          {/* Columna derecha: beneficios */}
+          <div
+            class="md:w-1/2 bg-gray-50 px-8 md:px-12 py-10 md:py-14 flex flex-col justify-center"
           >
-            <path d="M4 12h16M12 4v16" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
+            <h4 class="text-lg font-semibold text-gray-900 mb-6">
+              Beneficios habituales en este tipo de plan
+            </h4>
+
+            <ul class="divide-y divide-gray-200 text-sm md:text-base text-gray-800">
+              <li class="py-2.5">Rescates en ambulancia ante urgencias y descompensaciones</li>
+              <li class="py-2.5">
+                Atenciones médicas y de especialidad con copago preferente o $0, según condiciones
+              </li>
+              <li class="py-2.5">Cupos para exámenes de laboratorio y radiología en el año</li>
+              <li class="py-2.5">Evaluaciones y controles pensados para adultos mayores</li>
+            </ul>
+          </div>
         </div>
 
-        <h3 class="text-xl font-semibold text-gray-900 mb-3">Planes Adaptados a tu Familia</h3>
-        <p class="text-gray-600 mb-6">
-          Cada familia es distinta. Aquí podrás recibir una guía clara sobre las opciones que
-          existen y cuál podría ofrecerte mayor comodidad y tranquilidad.
-        </p>
-
-        <ul class="text-gray-700 text-sm space-y-2 mb-6">
-          <li>• Asesoría directa</li>
-          <li>• Elección según tus necesidades</li>
-          <li>• Información detallada al conversar</li>
-        </ul>
-
-        <a
-          href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent('Quiero asesoría sobre los planes para mi familia')}`}
-          class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition"
-        >
-          Consultar
-        </a>
-      </div>
-
-      <!-- Plan Premium -->
-      <div
-        class="rounded-2xl shadow-md border border-gray-200 p-8 text-center hover:shadow-lg transition"
-      >
-        <div class="flex justify-center mb-4">
-          <svg
-            class="w-12 h-12 text-blue-600"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.8"
-            viewBox="0 0 24 24"
+        {/* CTA inferior centrado */}
+        <div class="border-t border-gray-200 px-8 md:px-12 py-6 flex justify-center">
+          <a
+            href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(
+              'Quiero cotizar el plan senior de asistencia privada'
+            )}`}
+            class="inline-flex items-center justify-center px-7 py-3 rounded-full bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 transition"
           >
-            <path
-              d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"
-              stroke-linecap="round"
-              stroke-linejoin="round"></path>
-          </svg>
+            Cotizar Plan Senior por WhatsApp
+          </a>
         </div>
-
-        <h3 class="text-xl font-semibold text-gray-900 mb-3">Asesoría Integral en Planes</h3>
-        <p class="text-gray-600 mb-6">
-          Si buscas tranquilidad total, puedes recibir una explicación completa sobre las
-          alternativas más completas y cómo podrían ayudarte en tu día a día.
-        </p>
-
-        <ul class="text-gray-700 text-sm space-y-2 mb-6">
-          <li>• Información completa</li>
-          <li>• Acompañamiento en la elección</li>
-          <li>• Orientación para tu tranquilidad</li>
-        </ul>
-
-        <a
-          href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent('Quiero información completa sobre las alternativas de planes')}`}
-          class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition"
-        >
-          Consultar
-        </a>
       </div>
     </div>
+
+    <p class="text-xs md:text-sm text-gray-500 mt-6 text-center max-w-3xl mx-auto">
+      Los valores y beneficios específicos dependen del plan vigente al momento de contratar y serán
+      explicados en detalle por la ejecutiva antes de que tomes cualquier decisión.
+    </p>
   </div>
 </section>
