@@ -14,7 +14,7 @@ export const SEO = {
    * IDENTIDAD DEL SITIO (ERIKA)
    */
   identity: {
-    siteName: 'Asesoría en Planes de Asistencia Privada',
+    siteName: 'Planes de Ambulancias Privadas',
     representativeName: 'Erika Zuñiga',
     role: 'Asesora comercial independiente',
     serviceArea: 'Región Metropolitana',
