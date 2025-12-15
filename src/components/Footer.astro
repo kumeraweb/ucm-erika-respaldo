@@ -1,14 +1,14 @@
 ---
-import { SITE } from '../data/site'
+import { SEO } from '../data/seo'
 ---
 
 <footer class="w-full bg-gray-900 text-gray-300 mt-12 py-8">
   <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
     <!-- Brand -->
     <div>
-      <h3 class="text-lg font-semibold text-white mb-2">{SITE.name}</h3>
+      <h3 class="text-lg font-semibold text-white mb-2">{SEO.identity.siteName}</h3>
       <p class="text-sm leading-relaxed">
-        Este sitio ofrece información general y asistencia telefónica para orientación de planes.
+        Este sitio entrega orientación comercial independiente sobre planes de asistencia privada.
       </p>
     </div>
 
@@ -17,13 +17,17 @@ import { SITE } from '../data/site'
       <h4 class="text-md font-semibold text-white mb-2">Contacto</h4>
       <ul class="text-sm space-y-1">
         <li>
-          📞 <a href={`tel:${SITE.phone}`} class="hover:text-white transition">{SITE.phone}</a>
+          📞 <a href={`tel:${SEO.identity.contact.phone}`} class="hover:text-white transition"
+            >{SEO.identity.contact.phone}</a
+          >
         </li>
         <li>
-          💬 <a
-            href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(SITE.whatsappMessage)}`}
-            class="hover:text-white transition">WhatsApp</a
+          <a
+            href={`https://wa.me/${SEO.identity.contact.whatsapp}`}
+            class="hover:text-white transition"
           >
+            WhatsApp
+          </a>
         </li>
       </ul>
     </div>
@@ -31,6 +35,6 @@ import { SITE } from '../data/site'
 
   <div class="text-center text-xs text-gray-500 mt-8">
     © {new Date().getFullYear()}
-    {SITE.name}. Todos los derechos reservados.
+    {SEO.identity.siteName}. Todos los derechos reservados.
   </div>
 </footer>

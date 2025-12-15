@@ -1,9 +1,15 @@
 ---
-import { SITE } from '../data/site'
+import { SEO } from '../data/seo'
+
+const PHONE = SEO.identity.contact.whatsapp
+
+const MESSAGE = 'Hola, quisiera recibir orientación sobre planes de asistencia médica privada.'
+
+const WHATSAPP_URL = `https://wa.me/${PHONE}?text=${encodeURIComponent(MESSAGE)}`
 ---
 
 <a
-  href={`https://wa.me/${SITE.whatsapp}`}
+  href={WHATSAPP_URL}
   target="_blank"
   rel="noopener noreferrer"
   class="fixed bottom-5 right-5 z-50 flex items-center justify-center w-14 h-14 bg-green-500 rounded-full shadow-xl hover:bg-green-600 transition"
