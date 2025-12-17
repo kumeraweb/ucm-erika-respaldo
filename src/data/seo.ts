@@ -14,7 +14,7 @@ export const SEO = {
    * IDENTIDAD DEL SITIO (ERIKA)
    */
   identity: {
-    siteName: 'Planes de Ambulancias Privadas',
+    siteName: 'Contratar Planes Coronaria Movil',
     representativeName: 'Erika Zuñiga',
     role: 'Asesora comercial independiente',
     serviceArea: 'Región Metropolitana',

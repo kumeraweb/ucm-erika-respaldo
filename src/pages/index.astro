@@ -4,11 +4,19 @@ import Hero from '../components/Hero.astro'
 import Servicios from '../components/Servicios.astro'
 import Planes from '../components/Planes.astro'
 import Contacto from '../components/Contacto.astro'
+import PromoBanner from '../components/PromoBanner.astro'
 ---
 
-<BaseLayout title="Planes de Asistencia Privada – Sitio en Construcción">
+<BaseLayout title="Contratar Planes Coronaria Movil">
   <section id="inicio">
     <Hero />
+  </section>
+
+  <section id="promociones" class="py-12 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <PromoBanner image="/prom1.jpeg" alt="Promoción planes de asistencia privada" />
+      <PromoBanner image="/prom2.jpeg" alt="Promoción planes de rescate en ambulancia privada" />
+    </div>
   </section>
 
   <section id="planes">
